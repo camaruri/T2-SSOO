@@ -35,4 +35,5 @@ Process* init_process(
     int waiting_delay,
     int aging
     );
+void destroy_process(struct Process * p);
 bool verify_aging(int current_time, int init_time, struct Process * process);

@@ -31,6 +31,7 @@ struct Queue{
 
 
 Queue* init_queue(int qid, int type, int p, int q);
+void destroy_queue(struct Queue * q);
 bool enqueue(Queue *q, struct Process *new_process );
 bool order_enqueue(Queue *q, struct Process *new_process );
 struct Process* dequeue(Queue *q);

@@ -14,6 +14,10 @@ Queue* init_queue(int qid, int type, int p, int q) {
     return new_queue;
 };
 
+void destroy_queue(struct Queue * q) {
+    free(q);
+};
+
 // this is the method to add a node in a FIFO LIST
 bool enqueue(Queue *q, struct Process *new_process){
     Node * new_node = malloc(sizeof(Node));

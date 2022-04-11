@@ -32,3 +32,9 @@ Process* init_process(
         p->aging = aging;
         return p;
     }
+
+void destroy_process(struct Process * p) {
+    // Antes de liberarlos hay que escribir toda la info del proceso en el csv
+    // aca deberia ir la funcion que escriba una linea con la informacion de este proceso.
+    free(p);
+}
